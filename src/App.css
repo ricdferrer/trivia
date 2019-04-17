@@ -1,33 +1,68 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-image: url('./assets/hud-bg.png');
+    background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.nav {
+    height: 10vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav__header img {
+    object-fit: contain;
+    font-size: 24px;
+    height: 100%;
+    padding-top: 20px;
+    align-content: center;
+    margin: auto;
 }
+
+.main {
+    display: flex;
+    height: 70vh;
+}
+
+.section__body {
+    display: flex;
+    flex: 10;
+    align-content: right;
+}
+
+.section__body img {
+    object-fit: contain;
+    max-width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+
+.section__timer {
+    display: flex;
+    height: 100%;
+}
+
+.section__timer img {
+    object-fit: contain;
+    padding: 10px 0 10px 10px;
+    width: 40%;
+}
+
+.footer {
+    display: flex;
+    height: 20vh;
+}
+

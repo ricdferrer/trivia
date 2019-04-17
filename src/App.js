@@ -1,28 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import timer from './assets/hud-timer.png';
+import tituloApoema from './assets/apoema-title.png';
+import planets from './assets/hud-planets.png';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="wrapper">
+        <div className="nav nav__header">
+          <img src={tituloApoema} alt="Apoema Geografia" />
+        </div>
+        <div className="main">
+          <div className="section__body">
+            <img src={planets} alt="Planetas" />
+          </div>
+        </div>
+        <div className="footer">
+          <div className="section__timer">
+            <img src={timer} alt="Contador" />
+          </div>
+        </div>
       </div>
     );
   }
 }
-
-export default App;
